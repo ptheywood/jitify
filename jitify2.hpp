@@ -5649,14 +5649,14 @@ static const char* const jitsafe_header_stdint_h = R"(
 #define UINT16_MAX USHRT_MAX
 #define UINT32_MAX UINT_MAX
 #define UINT64_MAX ULLONG_MAX
-#define INTPTR_MIN LONG_MIN
-#define INTMAX_MIN LLONG_MIN
-#define INTPTR_MAX LONG_MAX
-#define INTMAX_MAX LLONG_MAX
-#define UINTPTR_MAX ULONG_MAX
-#define UINTMAX_MAX ULLONG_MAX
-#define PTRDIFF_MIN INTPTR_MIN
-#define PTRDIFF_MAX INTPTR_MAX
+#define INTPTR_MIN INT64_MIN
+#define INTMAX_MIN INT64_MIN
+#define INTPTR_MAX INT64_MAX
+#define INTMAX_MAX INT64_MAX
+#define UINTPTR_MAX UINT64_MAX
+#define UINTMAX_MAX UINT64_MAX
+#define PTRDIFF_MIN INT64_MIN
+#define PTRDIFF_MAX INT64_MAX
 #define SIZE_MAX UINT64_MAX
 #define _JITIFY_WCHAR_T_IS_UNSIGNED ((wchar_t)-1 >= 0)
 #define WCHAR_MIN                                                      \
